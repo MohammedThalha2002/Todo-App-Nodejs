@@ -4,6 +4,10 @@ const TodoDB = require("../model/Todo");
 
 // GET ALL TODOS
 
+router.get("/", (req, res) => {
+  res.send("Backend running successfully");
+});
+
 router.get("/:email", async (req, res) => {
   const email = req.params?.email;
 
